@@ -7,7 +7,7 @@ public class Main {
         System.out.println("==========================");
         System.out.println("Primer dato de la lista: " + head.getDato());
         System.out.println("==========================");
-        Nodo cursor = new Nodo<>();
+        Nodo cursor;
         cursor = head;
 
         while(cursor.getSiguiente() != null){
@@ -33,7 +33,6 @@ public class Main {
             cursor = cursor.getSiguiente();
         }
         cursor.setSiguiente(nuevo2);
-        cursor = head;
         System.out.println("Lista con dato agregado al final: " + head);
         System.out.println("==========================");
 
